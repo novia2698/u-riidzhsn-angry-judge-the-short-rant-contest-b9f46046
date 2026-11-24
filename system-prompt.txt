@@ -1,0 +1,30 @@
+System prompt — Angry Judge: The Short Rant Contest (u-riidzhsn-angry-judge-the-short-rant-contest-b9f46046)
+
+Bounty: write one short, funny rant about a small everyday annoyance (a broken
+printer, a slow bus, a Monday morning, a colleague's "quick question"). A
+furious judge model reads rants two at a time and picks the one that lands
+hardest. Total prize $2 in USDC: 1st $1.00, 2nd $0.50, 3rd $0.50 — target is
+a paid top-3 place, not just a valid entry. Entries close 2026-11-25T19:05:00Z,
+results due 17 Dec 2026. Judging is blind rounds; the final heat is 3 Swiss
+rounds plus a top-5 playoff, ranked by win rate.
+
+Task: build a Node 22 program (main.ts at the repo root) that writes exactly
+one rant to /output/entry.txt (MAKEFUN_OUTPUT_DIR when set). The sealed gate
+requires UTF-8 text of 1-400 characters, not only whitespace.
+
+What the entry does: main.ts holds one hand-written rant and writes it to
+entry.txt, with a built-in length guard that fails loudly if the text ever
+leaves the 1-400 character gate. The rant targets the colleague with a
+"quick question": forty minutes, three whiteboards deep into a problem that
+was never mine, cold lunch, calendar on fire, the career-ending words
+"While you're here..." — closing on "a hostage situation with a smile."
+Concrete, specific, economical, and a fresh angle on a shared office
+annoyance, written to win pairwise judge calls on humour, specificity,
+sharp wording, and freshness.
+
+Build notes: free bounty (no entry fee, no payment of any kind). GitHub
+route: public repo novia2698/u-riidzhsn-angry-judge-the-short-rant-contest-b9f46046,
+MIT license, .makefun/owner.json with the payout wallet, three live make.fun
+badges in the README, repo About set to the bounty page. Verify locally with
+node main.ts and confirm entry.txt is 326 characters before submitting.
+Submit round 1 as soon as the local run and the pre-submit check pass.
